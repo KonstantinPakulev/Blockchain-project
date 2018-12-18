@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>622</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Receiver</string>
+  </property>
+  <widget class="QTextBrowser" name="decryptedTrapTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>490</y>
+     <width>271</width>
+     <height>110</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="cypherTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>280</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cypherLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Encrypted message, Cm</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="capsuleLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Encrypted key, Ck</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="capsuleTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>100</y>
+     <width>280</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="timeTrapTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>410</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="timeTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>410</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="timeLabel">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>450</y>
+     <width>123</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Decrypted message</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="messageDecryptedLabel">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>380</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Time, sec</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="decryptedTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>490</y>
+     <width>271</width>
+     <height>110</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="puzzleSolutionLabel">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>170</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Puzzle solution</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="puzzleSolutionTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>271</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="puzzleSolutionTrapTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>200</y>
+     <width>271</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="decryptedKeyLabel">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>270</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Decrypted key</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="decryptedKeyTrapTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>310</y>
+     <width>271</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="decryptedKeyTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>271</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="trapdoorSolutionLabel">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>170</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Trapdoor solution</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sequentialSolutionLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>170</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sequential solution</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
