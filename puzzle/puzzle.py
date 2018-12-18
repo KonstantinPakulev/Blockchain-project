@@ -82,7 +82,7 @@ class TimeLockPuzzle:
             b = pow(b, 2, n)
 
         K = Ck - b
-        K = bin(K).replace("b", "")
+        K = bin(K).replace("b", "").zfill(168)
         K = binary_to_acsii(K)
         decrypted_m = self.triple_des.decode(Cm, K[:7], K[7:14], K[14:])
 
@@ -94,7 +94,7 @@ class TimeLockPuzzle:
 
         K = Ck - b
 
-        K = bin(K).replace("b", "")
+        K = bin(K).replace("b", "").zfill(168)
         K = binary_to_acsii(K)
         decrypted_m = self.triple_des.decode(Cm, K[:7], K[7:14], K[14:])
 

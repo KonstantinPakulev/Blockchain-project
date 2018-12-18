@@ -1,7 +1,6 @@
 from cipher.TripleDES import *
 from puzzle.puzzle import TimeLockPuzzle
 
-
 triple_des = TripleDES()
 
 string_to_encode = "0123456789ABCDEF"
@@ -30,3 +29,9 @@ print("Trap:")
 print(solution_trap)
 print(key_trap)
 print(decrypted_message_trap)
+
+T = 1  # sec
+tlp = TimeLockPuzzle(T)
+n, a, t, Ck, Cm = tlp.generate_puzzle(string_to_encode)
+decrypted_message = tlp.solve_puzzle(n, a, t, Ck, Cm)
+print(decrypted_message)

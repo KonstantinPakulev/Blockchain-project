@@ -48,15 +48,6 @@ class ReceiverApp(QtWidgets.QMainWindow, receiver.Ui_Dialog):
         self.capsuleTextBrowser.setPlainText(str(Ck))
 
         start_time = time.time()
-        solution_trap, K_trap, message_trap = self.time_lock_puzzle.solve_puzzle_via_trapdoor(n, a, t, Ck, Cm, phi_n)
-        elapsed_time = time.time() - start_time
-
-        self.puzzleSolutionTrapTextBrowser.setPlainText(str(solution_trap))
-        self.decryptedKeyTrapTextBrowser.setPlainText(str(K_trap))
-        self.timeTrapTextBrowser.setPlainText('{0:.3f}'.format(elapsed_time))
-        self.decryptedTrapTextBrowser.setPlainText(str(message_trap[1]))
-
-        start_time = time.time()
         solution, K, message = self.time_lock_puzzle.solve_puzzle(n, a, t, Ck, Cm)
         elapsed_time = time.time() - start_time
 
@@ -64,6 +55,15 @@ class ReceiverApp(QtWidgets.QMainWindow, receiver.Ui_Dialog):
         self.decryptedKeyTextBrowser.setPlainText(str(K))
         self.timeTextBrowser.setPlainText('{0:.3f}'.format(elapsed_time))
         self.decryptedTextBrowser.setPlainText(str(message[1]))
+
+        start_time = time.time()
+        solution_trap, K_trap, message_trap = self.time_lock_puzzle.solve_puzzle_via_trapdoor(n, a, t, Ck, Cm, phi_n)
+        elapsed_time = time.time() - start_time
+
+        self.puzzleSolutionTrapTextBrowser.setPlainText(str(solution_trap))
+        self.decryptedKeyTrapTextBrowser.setPlainText(str(K_trap))
+        self.timeTrapTextBrowser.setPlainText('{0:.3f}'.format(elapsed_time))
+        self.decryptedTrapTextBrowser.setPlainText(str(message_trap[1]))
 
 
 def main():
