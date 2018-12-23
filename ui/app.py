@@ -67,14 +67,14 @@ class ReceiverApp(QtWidgets.QMainWindow, receiver.Ui_Dialog):
 
 
 def main():
-    app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
-    sender_window = SenderApp()  # Создаём объект класса SenderApp
-    sender_window.show()  # Показываем окно
+    app = QtWidgets.QApplication(sys.argv)  
+    sender_window = SenderApp()
+    sender_window.show()
 
     receiver_window = ReceiverApp(sender_window.time_lock_puzzle)
     sender_window.receiver = receiver_window
     receiver_window.show()
-    app.exec_()  # и запускаем приложение
+    app.exec_()
 
 
 if __name__ == '__main__':
